@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>1分でわかる 家計タイプ診断｜森川満章</title>
+<meta name="description" content="質問2つ、1分。2,000件の相談から見えた4つの家計タイプ。あなたの現在地がわかります。">
+<meta property="og:title" content="1分でわかる 家計タイプ診断">
+<meta property="og:description" content="質問2つ、1分。あなたの家計タイプと、次にやることがわかります。">
+<meta property="og:image" content="https://mm738966m-boop.github.io/kakei-type-shindan/images/types.jpg">
+<meta name="robots" content="noindex">
+<style>
+:root{
+  --cream:#FBF8F0;
+  --ink:#2E2A24;
+  --sub:#6B6358;
+  --green:#1B5E4A;
+  --gold:#B79A54;
+  --line:#E3DCCB;
+  --lineg:#06C755;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP",sans-serif;
+  background:var(--cream); color:var(--ink);
+  line-height:1.9; -webkit-text-size-adjust:100%;
+}
+.wrap{max-width:600px;margin:0 auto;padding:0 20px}
+img{max-width:100%;height:auto;display:block}
+
+/* ヘッダー */
+.hero{padding:48px 0 8px;text-align:center}
+.eyebrow{
+  display:inline-block;font-size:13px;letter-spacing:.08em;color:var(--gold);
+  border:1px solid var(--gold);border-radius:99px;padding:5px 16px;margin-bottom:22px;
+}
+h1{
+  font-size:30px;line-height:1.5;font-weight:700;letter-spacing:.02em;
+  margin-bottom:18px;
+}
+h1 .accent{color:var(--green)}
+.lead{font-size:16px;color:var(--sub)}
+
+/* 画像 */
+.figure{margin:32px 0 8px}
+.figure img{border-radius:14px;box-shadow:0 6px 28px rgba(46,42,36,.10)}
+.caption{font-size:13px;color:var(--sub);text-align:center;margin-top:12px}
+
+/* セクション */
+section{padding:44px 0}
+h2{
+  font-size:21px;line-height:1.6;font-weight:700;margin-bottom:20px;
+  padding-left:14px;border-left:4px solid var(--green);
+}
+p+p{margin-top:16px}
+.note{font-size:15px;color:var(--sub)}
+
+/* ステップ */
+.steps{list-style:none;counter-reset:s}
+.steps li{
+  counter-increment:s;position:relative;padding:16px 0 16px 54px;
+  border-bottom:1px dashed var(--line);font-size:16px;
+}
+.steps li:last-child{border-bottom:none}
+.steps li::before{
+  content:counter(s);position:absolute;left:0;top:16px;
+  width:34px;height:34px;border-radius:50%;background:var(--green);color:#fff;
+  font-size:15px;font-weight:700;display:flex;align-items:center;justify-content:center;
+}
+.steps b{display:block;font-size:17px;margin-bottom:2px}
+.steps span{font-size:14px;color:var(--sub)}
+
+/* 注意ボックス */
+.callout{
+  background:#fff;border:1px solid var(--line);border-radius:12px;
+  padding:20px 22px;font-size:15px;
+}
+.callout strong{color:var(--green)}
+
+/* CTA */
+.cta{padding:8px 0 40px;text-align:center}
+.btn{
+  display:block;background:var(--lineg);color:#fff;text-decoration:none;
+  font-size:19px;font-weight:700;padding:20px 16px;border-radius:14px;
+  box-shadow:0 6px 18px rgba(6,199,85,.28);
+}
+.btn small{display:block;font-size:13px;font-weight:400;opacity:.92;margin-top:4px}
+.btn:active{transform:translateY(1px)}
+.cta .sub{font-size:13px;color:var(--sub);margin-top:14px}
+
+/* プロフィール */
+.profile{
+  background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px 22px;
+}
+.profile h3{font-size:17px;margin-bottom:4px}
+.profile .role{font-size:13px;color:var(--gold);margin-bottom:14px}
+.profile p{font-size:15px}
+.facts{list-style:none;margin-top:14px;font-size:14px;color:var(--sub)}
+.facts li{padding-left:16px;position:relative;margin-top:6px}
+.facts li::before{content:"";position:absolute;left:0;top:11px;width:6px;height:6px;border-radius:50%;background:var(--gold)}
+
+footer{padding:32px 0 56px;text-align:center;font-size:12px;color:var(--sub)}
+hr.deco{border:none;border-top:1px solid var(--line);margin:0}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <div class="hero">
+    <span class="eyebrow">質問2つ・所要1分</span>
+    <h1>あなたの家計は<br><span class="accent">どのタイプ</span>ですか。</h1>
+    <p class="lead">
+      お金が貯まらない理由は、人によって全然ちがいます。<br>
+      2,000件の相談から見えたのは、たった4つのタイプでした。
+    </p>
+  </div>
+
+  <div class="figure">
+    <img src="images/types.jpg" alt="4つの家計タイプ診断 早見表：穴あきバケツ型・流され型・芽が出た型・構造完成型">
+    <p class="caption">4つのタイプと、その並び順</p>
+  </div>
+
+</div>
+
+<hr class="deco">
+
+<div class="wrap">
+  <section>
+    <h2>順番を間違えると、がんばっても報われません</h2>
+    <p>
+      たとえば、穴のあいたバケツに水を注いでも、たまりません。
+    </p>
+    <p>
+      投資を始める前に、ふさぐべき穴がある。<br>
+      仕組みを作る前に、把握すべき現在地がある。
+    </p>
+    <p class="note">
+      だから最初にやることは、増やし方を学ぶことではなく、<br>
+      <strong>今どこに立っているかを知ること</strong>です。
+    </p>
+  </section>
+</div>
+
+<hr class="deco">
+
+<div class="wrap">
+  <section>
+    <h2>診断はLINEで届きます</h2>
+
+    <div class="callout">
+      この診断は、<strong>LINEのトーク画面で進みます</strong>。<br>
+      ボタンを押すと友だち追加の画面が開きますので、追加してからスタートしてください。
+    </div>
+
+    <ol class="steps" style="margin-top:24px">
+      <li>
+        <b>LINEを友だち追加</b>
+        <span>下のボタンから追加できます</span>
+      </li>
+      <li>
+        <b>「1分でお金タイプ診断」を押す</b>
+        <span>メニューの左下にあります</span>
+      </li>
+      <li>
+        <b>2つの質問に答える</b>
+        <span>すぐに結果と、次にやることが届きます</span>
+      </li>
+    </ol>
+  </section>
+</div>
+
+<div class="wrap cta">
+  <a class="btn" href="https://utage-system.com/line/open/X4Z2lketpu30?mtid=U8IcLp9w50f2">
+    LINEで診断をはじめる
+    <small>無料・1分で終わります</small>
+  </a>
+  <p class="sub">いつでもブロックできます。しつこい営業はしません。</p>
+</div>
+
+<hr class="deco">
+
+<div class="wrap">
+  <section>
+    <div class="profile">
+      <h3>森川 満章（もりかわ みちあき）</h3>
+      <p class="role">fulfull株式会社 代表／お金の先生</p>
+      <p>
+        「うちにはお金がないから」と、子どもの夢を諦めさせた過去があります。
+        そこからお金を学び直し、今では家族のことでお金に困ることがなくなりました。
+      </p>
+      <p>
+        親がお金を学ぶことは、子どもに自由を贈ること。<br>
+        同じ場所で立ち止まっている方に、まず現在地を渡したくてこの診断を作りました。
+      </p>
+      <ul class="facts">
+        <li>個別相談 2,000件超</li>
+        <li>登壇 200回・企業研修 25社</li>
+        <li>Voicy「ふるふるラジオ」パーソナリティ</li>
+      </ul>
+    </div>
+  </section>
+</div>
+
+<div class="wrap cta">
+  <a class="btn" href="https://utage-system.com/line/open/X4Z2lketpu30?mtid=U8IcLp9w50f2">
+    LINEで診断をはじめる
+    <small>無料・1分で終わります</small>
+  </a>
+</div>
+
+<footer>
+  &copy; fulfull Inc.
+</footer>
+
+</body>
+</html>
